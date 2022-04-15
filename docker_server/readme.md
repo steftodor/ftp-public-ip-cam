@@ -14,3 +14,21 @@ docker run -d \
   steftodor/ftp-public-ip-cam
 
 ```
+
+```
+---
+version: "2.1"
+services:
+  camera-ftpfeed:
+    image: steftodor/ftp-public-ip-cam
+    container_name: camera-ftpfeed
+    environment:
+      - camera_snap_url=
+      - capture_interval=
+      - ftp_url=
+      - ftp_user=
+      - ftp_pass=
+      - ftp_path=
+    restart: unless-stopped
+
+```
