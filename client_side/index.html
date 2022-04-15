@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Network Camera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="div-header">
+        <h1 id="header-title">Network Camera</h1>
+        <h3 id="header-subtitle"></h3>
+    </div>
+    <!-- content -->
+    <div class="div-content">
+        <img id="img-camera" src="loading.gif" alt="Camera Feed">
+    </div>
+    <!-- footer -->
+    <div class="div-footer">
+        <p id="footer-text"></p>
+    </div>
+
+    <script src="update.js"> </script>
+    <script>getCamera('');</script>
+</body>
+</html>
